@@ -31,7 +31,8 @@ double.TryParse(Console.ReadLine(), out second_point.z);
 double result = Math.Sqrt(Math.Pow(second_point.x - first_point.x, 2) +
     Math.Pow(second_point.y - first_point.y, 2) + Math.Pow(second_point.z - first_point.z, 2));
 
-Console.WriteLine($"first_point({first_point.x}; {first_point.y}; {first_point.z}) -> {result}");
+Console.WriteLine($"first_point({first_point.x}; {first_point.y}; {first_point.z} " +
+    $"second_point({second_point.x}; {second_point.y}; {second_point.z}) -> {result}");
 
 struct Point
 {
